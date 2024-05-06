@@ -1,0 +1,175 @@
+body{
+  background-color: #ffa9d1;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+h1{
+  color: #5a254a;
+  font-size: 4rem;
+  text-align: center;
+  margin: auto;
+}
+
+h2{
+  color: #87325f;
+  font-family: "Mr Dafoe", cursive;
+  font-size: 2rem;
+  text-align: center;
+  margin: auto;
+}
+
+.photoprofil{
+width: 15rem;
+text-align: center;
+margin: auto;
+display: block;
+}
+
+p{
+  color: #5a254a;
+  font-size: 1rem;
+  text-align: center;
+  margin: auto;
+}
+
+.btn_profil{
+  font-family: "Oswald", sans-serif;
+  display: block;
+  margin: auto;
+  margin-top: 1rem;
+
+  --btn-color: rgb(124 45 18);
+  --btn-bg: rgb(252 211 77);
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background-color: var(--btn-bg);
+  color: var(--btn-color);
+  padding: 14px 22px;
+  border-radius: 8px;
+  border: 0;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  font-family: system-ui;
+  border: 2px solid var(--btn-color);
+  transition: 100ms ease;
+  box-shadow: 5px 5px 0 0 var(--btn-color);
+
+}
+
+.btn_profil:hover {
+  box-shadow: 2px 2px 0 0 var(--btn-color);
+}
+
+.btn_profil:active {
+  transition: 50ms ease;
+  box-shadow:  0 0 0 0 var(--btn-color);
+}
+
+.btn_profil:focus-visible {
+  outline: 0;
+  --btn-color: #002cc8;
+}
+
+.btn_profil:focus-visible::after {
+  position: absolute;
+  left: 50%;
+  top: calc(100% + 12px);
+  transform: translateX(-50%);
+  content: "\21E7";
+  animation: float .5s ease-in-out infinite;
+}
+
+@keyframes float {
+	0% {
+		transform: translateX(-50%) translatey(0px);
+	}
+	50% {
+		transform: translateX(-50%) translatey(-6px);
+	}
+	100% {
+		transform: translateX(-50%) translatey(0px);
+	}
+}
+
+ul{
+  list-style: none;
+}
+
+.a_lkdin{
+    font-size: 2rem;
+}
+
+.card_h{
+  background-color: #ff76a6;
+  border-radius: 2rem;
+}
+
+.card_img{
+  margin-top: 2rem;
+  background-color:#c74a7f;
+  border-radius: 2rem;
+  padding: 1rem;
+}
+
+@media (max-width: 960px) {
+  /* Pour un écran < 960px, cette classe CSS s'applique */
+  .container {
+    width: 77.5rem;
+  }
+
+  h2{
+    font-size: 3rem;
+  }
+
+  .photoprofil{
+    width: 25rem;
+  }
+
+  p{
+    font-size: 2rem;
+  }
+
+  .btn_profil{
+    width: 50rem;
+    font-size: 2rem;
+  }
+
+  .a_lkdin{
+    font-size: 3rem;
+    color: #5a254a;
+  }
+}
+
+@media (max-width: 720px) {
+  /* Pour un écran < 720px, cette classe CSS s'applique */
+  .container {
+    width: 49.5rem;
+  }
+
+  h2{
+    font-size: 3rem;
+  }
+
+  .photoprofil{
+    width: 25rem;
+  }
+
+  p{
+    font-size: 2rem;
+  }
+
+  .btn_profil{
+    width: 49rem;
+    font-size: 2rem;
+  }
+
+  .a_lkdin{
+    font-size: 3rem;
+    color: #5a254a;
+  }
+}
